@@ -31,7 +31,7 @@ Currently provides the following functions:
 3. ~~Run `ConvertFrom-HuntAttributes`, and enjoy your JSON.~~
 4. create a executable file that runs the `Get-HuntTeamMmr` functionality and appends it to a `mmr.txt` file 
     ```powershell
-    ps2exe .\HuntToolkit.psm1 .\GetTeamMMR.exe
+    ps2exe .\HuntToolkit.ps1 .\GetTeamMMR.exe
     ```
   > :warning: this is a crude workaround for not imporing the module !WIP!
 
