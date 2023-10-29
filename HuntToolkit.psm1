@@ -221,4 +221,7 @@ function HuntAddKeys {
     return $Dict
 }
 
-Export-ModuleMember *-*
+#Export-ModuleMember *-*
+
+Get-Date >> mmr.txt
+Get-HuntTeamMmr >> mmr.txt

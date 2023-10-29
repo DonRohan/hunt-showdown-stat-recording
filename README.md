@@ -23,13 +23,17 @@ Currently provides the following functions:
 
 ## How
 1. Download `HuntToolkit.psm1` 
-2. Import the module into your Powershell session
-  a. If stored in an $env:PSModulePath location it will automatically import
-  b. If storing somewhere else, either:
-    * call `Import-Module "path\to\module\HuntToolkit.psm1"` before every run
-    * add the above command to your Powershell profile (location is stored as $profile) and relaunch
-3. Run `ConvertFrom-HuntAttributes`, and enjoy your JSON.
-
+2. ~~Import the module into your Powershell session~~
+  a. ~~If stored in an $env:PSModulePath location it will automatically import~~
+  b. ~~If storing somewhere else, either:~~
+    * ~~call `Import-Module "path\to\module\HuntToolkit.psm1"` before every run~~
+    * ~~add the above command to your Powershell profile (location is stored as $profile) and relaunch~~
+3. ~~Run `ConvertFrom-HuntAttributes`, and enjoy your JSON.~~
+4. create a executable file that runs the `Get-HuntTeamMmr` functionality and appends it to a `mmr.txt` file 
+    ```powershell
+    ps2exe .\HuntToolkit.psm1 .\GetTeamMMR.exe
+    ```
+  > :warning: this is a crude workaround for not imporing the module !WIP!
 
 ## To-do
 * Complete `ConvertFrom-HuntAttributes`:
